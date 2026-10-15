@@ -1,0 +1,603 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brewsko Coffee Co.</title>
+</head>
+
+<body>
+
+    <!-- HEADER AND NAVIGATION -->
+    <header id="top">
+        <table width="100%">
+            <tr>
+                <td>
+                    <img src="LOGO.png"
+                              alt="Coffee product"
+                              width="250"
+                              height="200">
+                </td>
+                <td align="right">
+                    <a href="#home">Shop</a> |
+                    <a href="#products">Subscriptions</a> |
+                    <a href="#products">Merch</a> |
+                    <a href="#cart">Cart</a>
+                </td>
+            </tr>
+        </table>
+
+        <form action="#products" method="get">
+            <label for="search">Search:</label>
+            <input type="search" id="search" name="q"
+                   placeholder="Search coffee...">
+            <button type="submit">Search</button>
+        </form>
+
+        <hr>
+    </header>
+
+    <main>
+
+        <!-- HOME PAGE -->
+        <section id="home">
+
+            <table width="100%" cellpadding="10">
+                <tr>
+                    <!-- LEFT SIDE: TEXT -->
+                    <td width="50%" valign="middle">
+        
+                        <h1>Brewsko: Fueling<br>
+                            Your Passion.</h1>
+        
+                        <p>Fresh coffee. Quality brewing. Better mornings.</p>
+        
+                        <p>
+                            Discover our signature coffee blends
+                            and brewing gear.
+                        </p>
+        
+                        <a href="#products">
+                            <button type="button">Shop The Blends</button>
+                        </a>
+        
+                    </td>
+        
+                    <!-- RIGHT SIDE: IMAGE -->
+                    <td width="50%" align="center" valign="middle">
+        
+                        <img src="LOGO.png"
+                             alt="Brewsko coffee logo"
+                             width="350"
+                             height="350">
+        
+                    </td>
+                </tr>
+            </table>
+        
+        </section>
+        
+        <hr>
+        
+        <!-- OUR PRODUCTS: BELOW SHOP THE BLENDS -->
+        <section id="products">
+        
+            <h2>Our Products</h2>
+
+            <table border="1" cellpadding="10" cellspacing="0"
+                   width="100%">
+                <tr>
+                    <td align="center">
+                        <img src="Benguet Coffee.jpg"
+                        alt="Brewsko Benguet Coffee"
+                        width="250"
+                        height="200">
+
+                        <h3>Benguet Coffee</h3>
+                        <p>₱18.99</p>
+                        <p>★★★★★</p>
+
+                        <a href="#details">View Product</a>
+                        <br><br>
+
+                        <a href="#cart">
+                            <button type="button">Add to Cart</button>
+                        </a>
+                    </td>
+
+                    <td align="center">
+                        <img src="Sagada Coffee.jpg"
+                        alt="Brewsko Sagada Coffee"
+                        width="250"
+                        height="200">
+
+                        <h3>Sagada Coffee</h3>
+                        <p>₱12.98</p>
+                        <p>★★★★☆</p>
+
+                        <a href="#details">View Product</a>
+                        <br><br>
+
+                        <a href="#cart">
+                            <button type="button">Add to Cart</button>
+                        </a>
+                    </td>
+
+                    <td align="center">
+                        <img src="Kalinga Coffee.jpg"
+                        alt="Brewsko Kalinga Coffee"
+                        width="250"
+                        height="200">
+
+                        <h3>Kalinga Coffee</h3>
+                        <p>₱18.99</p>
+                        <p>★★★★★</p>
+
+                        <a href="#details">View Product</a>
+                        <br><br>
+
+                        <a href="#cart">
+                            <button type="button">Add to Cart</button>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+
+            <p>
+                <a href="#details">Product Details</a> |
+                <a href="#cart">Shopping Cart</a>
+            </p>
+
+            <hr>
+        </section>
+
+        <!-- PRODUCT DETAILS PAGE -->
+        <section id="details">
+            <h1>Brewsko Benguet Coffee</h1>
+
+            <table width="100%" border="0" cellpadding="10">
+                <tr>
+                    <td width="40%">
+                        <img src="Benguet Coffee.jpg"
+                        alt="Brewsko Morning Glow coffee"
+                        width="400"
+                        height="400">
+                    </td>
+
+                    <td>
+                        <h2>Brewsko Benguet Coffee</h2>
+
+                        <h3>₱18.99</h3>
+
+                        <p>★★★★★ (4.5 reviews)</p>
+
+                        <h3>Product Description</h3>
+
+                        <p>
+                            Enjoy a smooth and flavorful coffee blend
+                            made for your everyday coffee routine.
+                        </p>
+
+                        <p>
+                            Perfect for mornings, work breaks, and
+                            relaxing moments.
+                        </p>
+
+                        <label for="detail-qty">Quantity:</label>
+                        <input type="number" id="detail-qty"
+                               name="detail-qty" min="1" max="20"
+                               value="1">
+
+                        <br><br>
+
+                        <a href="#cart">
+                            <button type="button">Add to Cart</button>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+
+            <hr>
+
+            <h3>Product Details &amp; Origin</h3>
+
+            <table border="1" cellpadding="10" width="100%">
+                <tr>
+                    <td>
+                        <h4>About This Blend</h4>
+                        <p>
+                            A balanced coffee blend with a smooth finish
+                            and rich aroma.
+                        </p>
+                    </td>
+
+                    <td>
+                        <h4>Origin</h4>
+                        <p>Cordillera Administrative Region (CAR)</p>
+                    </td>
+                </tr>
+            </table>
+
+            <p><a href="#products">Back to Products</a></p>
+
+            <hr>
+        </section>
+
+        <!-- SHOPPING CART PAGE -->
+        <section id="cart">
+            <h1>Shopping Cart</h1>
+
+            <table border="1" cellpadding="10" cellspacing="0"
+                   width="100%">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="Benguet Coffee.jpg"
+                              alt="Coffee product"
+                              width="250"
+                              height="200">
+                              <br>
+                            <strong>Benguet Coffee</strong>
+                            <br>
+                            <small>Product description here.</small>
+                        </td>
+
+                        <td>₱18.99</td>
+                        <td>₱18.99</td>
+
+                        <td>
+                            <button type="button">X</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="Sagada Coffee.jpg"
+                              alt="Coffee product"
+                              width="250"
+                              height="200">
+                              <br>
+                            <strong>Sagada Coffee</strong>
+                            <br>
+                            <small>Product description here.</small>
+                        </td>
+
+                        <td>₱12.98</td>
+                        <td>₱12.98</td>
+
+                        <td>
+                            <button type="button">X</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img src="Kalinga Coffee.jpg"
+                              alt="Coffee product"
+                              width="250"
+                              height="200">
+                              <br>
+                            <strong>Kalinga Coffee</strong>
+                            <br>
+                            <small>Product description here.</small>
+                        </td>
+
+                        <td>₱18.99</td>
+                        <td>₱18.99</td>
+
+                        <td>
+                            <button type="button">X</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+
+            <table border="1" cellpadding="10" width="100%">
+                <tr>
+                    <td>
+                        <h3>Order Summary</h3>
+
+                        <p>Subtotal: ₱50.96</p>
+                        <p>Estimated Shipping: ₱5.00</p>
+                        <p>Taxes: ₱0.00</p>
+
+                        <hr>
+
+                        <h2>Total: ₱55.96</h2>
+
+                        <a href="#products">
+                            <button type="button">Continue Shopping</button>
+                        </a>
+
+                        <a href="#checkout">
+                            <button type="button">Checkout</button>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+
+            <hr>
+        </section>
+
+        <!-- CHECKOUT PAGE -->
+        <section id="checkout">
+            <h1>Checkout</h1>
+
+            <p>
+                <a href="#cart">1. Cart</a> &gt;
+                <strong>2. Delivery</strong> &gt;
+                <strong>3. Payment</strong>
+            </p>
+
+            <form action="#" method="post">
+
+                <!-- CUSTOMER INFORMATION -->
+                <fieldset>
+                    <legend>Customer Information</legend>
+
+                    <p>
+                        <label for="first-name">First Name:</label>
+                        <br>
+                        <input type="text" id="first-name"
+                               name="first-name" required>
+                    </p>
+
+                    <p>
+                        <label for="last-name">Last Name:</label>
+                        <br>
+                        <input type="text" id="last-name"
+                               name="last-name" required>
+                    </p>
+
+                    <p>
+                        <label for="checkout-email">Email Address:</label>
+                        <br>
+                        <input type="email" id="checkout-email"
+                               name="email" required>
+                    </p>
+
+                    <p>
+                        <label for="checkout-phone">Phone Number:</label>
+                        <br>
+                        <input type="tel" id="checkout-phone"
+                               name="phone" required>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <!-- SHIPPING ADDRESS -->
+                <fieldset>
+                    <legend>Shipping Address</legend>
+
+                    <p>
+                        <label for="street">Street Address:</label>
+                        <br>
+                        <input type="text" id="street"
+                               name="street" required>
+                    </p>
+
+                    <p>
+                        <label for="province">State/Province:</label>
+                        <br>
+                        <input type="text" id="province"
+                               name="province" required>
+                    </p>
+
+                    <p>
+                        <label for="checkout-city">City:</label>
+                        <br>
+                        <input type="text" id="checkout-city"
+                               name="city" required>
+                    </p>
+
+                    <p>
+                        <label for="postal">Postal Code:</label>
+                        <br>
+                        <input type="text" id="postal"
+                               name="postal" required>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <!-- SHIPPING METHOD -->
+                <fieldset>
+                    <legend>Shipping Method</legend>
+
+                    <p>
+                        <input type="radio" id="standard"
+                               name="shipping" value="standard"
+                               checked>
+                        <label for="standard">
+                            Standard (3-5 days)
+                        </label>
+                        <br>
+                        <small>Select standard shipping.</small>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="express"
+                               name="shipping" value="express">
+                        <label for="express">
+                            Express (2-day)
+                        </label>
+                        <br>
+                        <small>Faster delivery option.</small>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="next-day"
+                               name="shipping" value="next-day">
+                        <label for="next-day">
+                            Next-day delivery
+                        </label>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <!-- PAYMENT DETAILS -->
+                <fieldset>
+                    <legend>Payment Details</legend>
+
+                    <p>
+                        <label for="card-number">
+                            Credit Card Number:
+                        </label>
+                        <br>
+                        <input type="text" id="card-number"
+                               name="card-number"
+                               placeholder="Card Number">
+                    </p>
+
+                    <p>
+                        <label for="cardholder">
+                            Cardholder Name:
+                        </label>
+                        <br>
+                        <input type="text" id="cardholder"
+                               name="cardholder">
+                    </p>
+
+                    <p>
+                        <label for="expiry">Expiry Date (MM/YY):</label>
+                        <br>
+                        <input type="text" id="expiry" name="expiry"
+                               placeholder="MM/YY">
+                    </p>
+
+                    <p>
+                        <input type="checkbox" id="save-card"
+                               name="save-card" value="yes">
+                        <label for="save-card">
+                            Save card for future use
+                        </label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="cash"
+                               name="payment" value="cash">
+                        <label for="cash">Cash on Delivery</label>
+                    </p>
+
+                    <p>
+                        <input type="radio" id="wallet"
+                               name="payment" value="wallet">
+                        <label for="wallet">MariBank</label>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <!-- FINAL ORDER SUMMARY -->
+                <fieldset>
+                    <legend>Order Summary</legend>
+
+                    <p>Benguet Coffee × 2 — ₱37.98</p>
+                    <p>Sagada Coffee × 1 — ₱12.98</p>
+
+                    <hr>
+
+                    <p>Subtotal: ₱50.96</p>
+                    <p>Shipping: ₱5.00</p>
+                    <h3>Total: ₱55.96</h3>
+
+                    <p>
+                        <input type="checkbox" id="terms"
+                               name="terms" value="yes" required>
+                        <label for="terms">
+                            I agree to the
+                            <a href="#terms-info">
+                                Terms and Conditions
+                            </a>
+                        </label>
+                    </p>
+
+                    <button type="submit">Place Order</button>
+                    <button type="reset">Clear</button>
+                </fieldset>
+
+            </form>
+
+            <hr>
+        </section>
+
+        <!-- OPENSTREETMAP SECTION -->
+<section id="location">
+
+    <h2>Find Us on the Map</h2>
+
+    <p>Explore our location using OpenStreetMap.</p>
+
+    <ul>
+
+        <li>
+            <a
+                href="https://www.google.com/maps/place/Baguio+Center+Mall/@16.4163176,120.5937376,17z"
+                target="_blank"
+                rel="noopener">
+                OpenStreetMap
+            </a>
+        </li>
+
+</section>
+
+        <!-- TERMS AND CONDITIONS -->
+        <section id="terms-info">
+            <h2>Terms and Conditions</h2>
+
+            <details>
+                <summary>Read Terms and Conditions</summary>
+
+                <ol>
+                    <li>All prices are listed in Philippine pesos.</li>
+                    <li>Delivery time depends on the shipping method.</li>
+                    <li>Customers must provide correct shipping information.</li>
+                    <li>Returns are subject to store policies.</li>
+                </ol>
+            </details>
+
+            <hr>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>Brewsko Coffee Co.</h3>
+
+        <p>
+            <a href="#home">About</a> |
+            <a href="#products">Shop</a> |
+            <a href="#cart">Cart</a> |
+            <a href="#checkout">Checkout</a> |
+            <a href="#terms-info">Terms</a>
+        </p>
+
+        <p>
+            Contact:
+            <a href="mailto:hello@brewsko.example">
+                hello@brewsko.example
+            </a>
+        </p>
+
+        <p>&copy; 2026 Brewsko Coffee Co. All rights reserved.</p>
+
+        <a href="#top">Back to Top</a>
+    </footer>
+
+</body>
+</html>
